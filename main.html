@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Luciano Soares"/>
+    <meta name="description" content="Treinamento de uma rede neural utilizando a Regra de Hebb">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Amaq</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Maquina de hebb</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="input-group mb-3">
+            <span  id="basic-addon1">| 1  |  1 |</span>
+            <input id="entrada_1"  type="number" placeholder="Entrada 01">
+        </div>
+        <div class="input-group mb-3">
+            <span id="basic-addon1">| 1  | -1 |</span>
+            <input id="entrada_2" type="number" placeholder="Entrada 02">
+        </div>
+        <div class="input-group mb-3">
+            <span id="basic-addon1">| -1  |  1 |</span>
+            <input id="entrada_3" type="number" placeholder="Entrada 03">
+        </div>
+        <div class="input-group mb-3">
+            <span id="basic-addon1">| -1 | -1 |</span>
+            <input id="entrada_4" type="number" placeholder="Entrada 04">
+        </div>
+    
+
+        <button onClick="fn_atualiza()">Gerar maquina</button>
+        <div class="button-teste">
+            <h2 id="Saida">Novos pesos</h2>
+        </div>
+
+        <div class="input-group mb-3">
+            <span id="basic-addon1">A</span>
+            <input id="entrada_teste_0" type="number" placeholder="Entrada teste 01">
+        </div>
+        <div class="input-group mb-3">
+            <span id="basic-addon1">B</span>
+            <input id="entrada_teste_1" type="number" placeholder="Entrada teste 02">
+        </div>
+        <button onclick="fn_teste()">Testar</button>
+        <h2 id="Saida_teste">Saida</h2>
+    </div>
+
+
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
